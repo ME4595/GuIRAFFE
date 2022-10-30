@@ -13,7 +13,7 @@ public class LocalCrawlerSection extends CrawlSection {
 
     public LocalCrawlerSection(String crawlerName){
         super(crawlerName);
-        crawlerType = CrawlerType.local;
+        type = CrawlerType.local;
     }
 
     @Override

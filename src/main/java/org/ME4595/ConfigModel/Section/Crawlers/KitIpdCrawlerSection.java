@@ -11,7 +11,7 @@ public class KitIpdCrawlerSection extends CrawlSection {
 
     public KitIpdCrawlerSection(String crawlerName){
         super(crawlerName);
-        crawlerType = CrawlerType.kit_ipd;
+        type = CrawlerType.kit_ipd;
     }
 
     @Override

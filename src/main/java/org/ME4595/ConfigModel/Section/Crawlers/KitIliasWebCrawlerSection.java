@@ -17,7 +17,7 @@ public class KitIliasWebCrawlerSection extends CrawlSection {
 
     public KitIliasWebCrawlerSection(String crawlerName){
         super(crawlerName);
-        crawlerType = CrawlerType.kit_ilias_web;
+        type = CrawlerType.kit_ilias_web;
     }
 
     @Override

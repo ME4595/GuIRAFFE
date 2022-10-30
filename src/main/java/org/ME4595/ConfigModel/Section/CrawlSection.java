@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class CrawlSection extends Section{
-    protected CrawlerType crawlerType;
+    protected CrawlerType type;
     private boolean skip;
     private File output_dir; //TODO verwendet PFERD einen absoluten Pfad oder einen relativ zum working_dir? Falls letzteres durch String ersetzen
     private RedownloadMode redownload;
