@@ -4,11 +4,10 @@ import java.io.File;
 
 public class DefaultSection extends Section{
     private File working_dir;
-
-    private boolean explain;
-    private boolean status;
-    private boolean report;
-    private boolean share_cookies;
+    private boolean explain = false;
+    private boolean status = true;
+    private boolean report = true;
+    private boolean share_cookies = true;
 
     public DefaultSection(){
         super("DEFAULT");

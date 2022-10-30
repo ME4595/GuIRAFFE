@@ -7,8 +7,8 @@ import java.io.File;
 
 public class LocalCrawlerSection extends CrawlSection {
     private File target;
-    private double crawl_delay; //TODO verwendet PFERD single, double oder float?
-    private double download_delay; //TODO verwendet PFERD single, double oder float?
+    private double crawl_delay = 0.0; //TODO verwendet PFERD single, double oder float?
+    private double download_delay = 0.0; //TODO verwendet PFERD single, double oder float?
     private int download_speed;
 
     public LocalCrawlerSection(String crawlerName){

@@ -5,7 +5,7 @@ import org.ME4595.ConfigModel.Types.AuthType;
 
 public class KeyringAuthSection extends AuthSection {
     private String username;
-    private String keyring_name;
+    private String keyring_name = "PFERD";
 
     public KeyringAuthSection(String authenticatorName){
         super(authenticatorName);

@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class KitIpdCrawlerSection extends CrawlSection {
     private URL target;
-    private String link_regex;
+    private String link_regex = "^.*?[^/]+\\.(pdf|zip|c|cpp|java)$";
 
     public KitIpdCrawlerSection(String crawlerName){
         super(crawlerName);

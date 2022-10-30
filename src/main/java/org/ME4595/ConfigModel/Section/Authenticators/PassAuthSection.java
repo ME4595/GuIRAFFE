@@ -13,6 +13,12 @@ public class PassAuthSection extends AuthSection {
     public PassAuthSection(String authenticatorName){
         super(authenticatorName);
         type = AuthType.pass;
+        username_prefixes.add("login");
+        username_prefixes.add("username");
+        username_prefixes.add("user");
+        password_prefixes.add("password");
+        password_prefixes.add("pass");
+        password_prefixes.add("secret");
     }
 
     @Override
@@ -25,5 +31,6 @@ public class PassAuthSection extends AuthSection {
     public void loadFromConfigFile(String sectionName) {
         super.loadFromConfigFile(sectionName);
         //TODO: load subclass-specific fields
+        //TODO: falls für username/password_prefixes ein Eintrag im bestehenden Config File steht, vor dem Laden ein mal Listen clearen um die default-Einträge zu entfernen
     }
 }

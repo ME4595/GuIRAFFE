@@ -10,10 +10,10 @@ public class KitIliasWebCrawlerSection extends CrawlSection {
     private String target;
     private AuthSection auth;
     private TfaAuthSection tfa_auth;
-    private ExternalLinkRepresentationMode links;
-    private double link_redirect_delay;
-    private boolean videos;
-    private double http_timeout;
+    private ExternalLinkRepresentationMode links = ExternalLinkRepresentationMode.fancy;
+    private double link_redirect_delay = -1;
+    private boolean videos = false;
+    private double http_timeout = 20.0;
 
     public KitIliasWebCrawlerSection(String crawlerName){
         super(crawlerName);
