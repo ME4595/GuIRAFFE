@@ -2,10 +2,10 @@ package org.ME4595.ConfigModel.Section;
 
 import org.ME4595.ConfigModel.Types.AuthType;
 
-public abstract class Auth extends Section{
+public abstract class AuthSection extends Section{
     protected AuthType type;
 
-    public Auth(String authenticatorName){
+    public AuthSection(String authenticatorName){
         super("auth:" + authenticatorName);
     }
 

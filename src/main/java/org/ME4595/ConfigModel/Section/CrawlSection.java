@@ -6,7 +6,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CrawlSection extends Section{
+public abstract class CrawlSection extends Section{
     private CrawlerType crawlerType;
     private boolean skip;
     private File output_dir; //TODO verwendet PFERD einen absoluten Pfad oder einen relativ zum working_dir? Falls letzteres durch String ersetzen
@@ -17,7 +17,7 @@ public class CrawlSection extends Section{
     private int downloads;
     private double task_delay; //TODO verwendet PFERD single, double oder float?
     private boolean windows_paths;
-    private Auth auth;
+    private AuthSection authSection;
 
     public CrawlSection(String crawlerName){
         super("crawl:" + crawlerName);

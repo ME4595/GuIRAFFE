@@ -1,15 +1,15 @@
 package org.ME4595.ConfigModel.Section.Authenticators;
 
-import org.ME4595.ConfigModel.Section.Auth;
+import org.ME4595.ConfigModel.Section.AuthSection;
 import org.ME4595.ConfigModel.Types.AuthType;
 
-public class SimpleAuth extends Auth {
+public class KeyringAuthSection extends AuthSection {
     private String username;
-    private String password;
+    private String keyring_name;
 
-    public SimpleAuth(String authenticatorName){
+    public KeyringAuthSection(String authenticatorName){
         super(authenticatorName);
-        type = AuthType.simple;
+        type = AuthType.keyring;
     }
 
     @Override

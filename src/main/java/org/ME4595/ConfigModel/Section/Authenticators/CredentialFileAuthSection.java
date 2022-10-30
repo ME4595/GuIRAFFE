@@ -1,14 +1,14 @@
 package org.ME4595.ConfigModel.Section.Authenticators;
 
-import org.ME4595.ConfigModel.Section.Auth;
+import org.ME4595.ConfigModel.Section.AuthSection;
 import org.ME4595.ConfigModel.Types.AuthType;
 
 import java.io.File;
 
-public class CredentialFileAuth extends Auth {
+public class CredentialFileAuthSection extends AuthSection {
     private File path;
 
-    public CredentialFileAuth(String authenticatorName){
+    public CredentialFileAuthSection(String authenticatorName){
         super(authenticatorName);
         type = AuthType.credential_file;
     }
